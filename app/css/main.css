@@ -321,9 +321,7 @@ body {
   width: calc(100% - 235px); }
   @media screen and (max-width: 768px) {
     .content-right {
-      -webkit-flex-basis: 100%;
-          -ms-flex-preferred-size: 100%;
-              flex-basis: 100%; } }
+      width: 100%; } }
 
 /* open block content-right__table-letters */
 /* open block content-right__table-letters */
