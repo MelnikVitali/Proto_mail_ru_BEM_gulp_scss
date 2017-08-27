@@ -1,0 +1,66 @@
+//@import "app/libs/magnific-popup/dist/magnific-popup" ;// Импортируем библиотеку Magnific Popup
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&subset=cyrillic');
+
+@import "custom/_reset";
+
+@import "custom/_variables.scss";
+
+@import "custom/_mixins.scss";
+
+@import "custom/_options";
+
+//open block top-nav
+@import "custom/_top-nav";
+
+//open block center-menu
+@import "custom/_center-menu";
+
+//open block search-block
+@import "custom/_search-block";
+
+/* open block content */
+@import 'custom/_content';
+
+/* open block fixed-menu */
+@import 'custom/_fixed-menu';
+
+/* open block content-left */
+@import 'custom/_content-left';
+
+/* open block bottom-icon */
+@import 'custom/_bottom-icon';
+
+/* open block content-right */
+@import 'custom/_content-right';
+
+/* open block content-right__table-letters */
+@import 'custom/_table-letters';
+
+ /* open block content-right__footer */
+@import 'custom/_content-right__footer';
+
+/* media-queries */
+//@import 'custom/media-queries';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

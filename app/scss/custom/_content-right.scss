@@ -1,0 +1,8 @@
+/* open block content-right */
+
+.content-right{
+	width: calc(100% - 235px);    //ширина минус блок с левым контентом
+	@include max768px{
+		flex-basis: 100%;         //при 768 пикс. занимает всю площадь
+	}
+}

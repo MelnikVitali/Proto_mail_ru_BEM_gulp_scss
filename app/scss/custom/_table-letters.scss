@@ -1,0 +1,79 @@
+/* open block content-right__table-letters */
+
+
+.table-letters{
+	margin-bottom: 10px;                            //поле снизу
+	font-size: 1.1rem;                              //размер текста
+	color: $color-blue;                             //цвет текста
+    white-space: nowrap;                            //перенос строк игнорируется
+    //vertical-align: middle !important;            // убираем свойства будстрапа
+	border: 1px solid #adadad;	
+	overflow-x: auto;	                            //полоса прокрутки авто
+    cursor: pointer;                                //при наведении
+
+	&__reclame{                                     // рекламная строка таблицы
+		display: flex;
+		align-items: center;                        //центр флексов
+		padding: 5px 10px;
+		background-color: $color-table--gray;
+		border: 1px solid $color-border--light-gray;
+		border-bottom: none;
+		border-radius: 3px 3px 0 0;
+	}
+
+	&__text{
+		margin-left: 5px;                            //поле между текстами
+	}
+
+	&__text--bold{                                   //жирный текст
+		font-weight: bold;
+		color: black;
+	}
+	&__text--underline{                              //подеркивание текста
+		text-decoration: underline;
+	}
+
+	&__icon--alarm{                                  //иконка внимание
+		padding-left: 15px;
+		color: $color-active;
+	}
+
+	&__icon--left-position{                          //иконка закрыть справа позиция
+		margin-left: auto;
+	}
+
+	&__input{                                        //рука инпутов
+		cursor: pointer;
+	}
+
+	&__td{
+		vertical-align: middle !important;
+		text-align: center;
+		white-space: nowrap;                         //не переносить текст
+	}
+
+	&__td--padding-left{
+		//padding-left: 20px !important;               //левое поле
+	}
+
+	&__td--color{
+		background-color: $color-table--gray;
+	}
+
+	&__td--text-bold{
+		font-weight: bold;
+	}
+
+	&__circle{                                      //синий круг
+		width: 12px;
+		height: 12px;
+		margin-left: 5px;
+		background: $color-blue;
+		border-radius: 50%;
+	}
+
+	&__image{                                        //размер иконок-логотипов
+		width: 27px;
+	}
+}
+

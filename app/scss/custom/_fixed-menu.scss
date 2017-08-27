@@ -1,0 +1,83 @@
+/* open block fixed-menu */
+
+.fixed-menu {
+	position: -webkit-sticky;
+	position: sticky;                        //фиксированая позиция липкая
+	top: 15px;                               //прилипает к верху 10px
+	display: flex;                           //флексы
+	flex-wrap: wrap;                         //разрешает переносы на другую строку
+	flex-basis: 100%;                        //ширина елемента
+	z-index: 9;                             //сверху левого контента
+	@include max768px{
+		position: static;                    //отменяем фиксирование
+	}
+
+	&__center-btn{                             //поле при сужении
+		 margin-bottom: 10px;
+	 }
+
+	&__left-btn{
+		margin-right: 99px;                    //поле между блоками левый и средний
+		margin-bottom: 10px;                   //поле при сужении
+	}
+
+	&__right-btn{
+		margin-left: auto;                     //при флексе аналогично флоат-в право
+	}
+
+	&__right-btn--max768px{                    //убираем
+		@include max768px{
+			display: none;
+		}
+	}
+
+	&__btn-group--margin-left{                 // добавляем пробел между кнопками
+		margin-left: 3px;
+	}
+
+	&__btn-group--max1024px{                   //убираем  группу кнопок
+		@include max1024px{
+			display: none;
+		}
+	}
+
+	&__btn-group--max768px{                     //убираем группу кнопок
+		@include max768px{
+			display: none;
+		}
+	}
+
+	&__button {
+		color: $color-button--gray;
+		background-color: #E0E0E0;              // цвет кнопок
+		border-color: $color-border--gray;
+	}
+
+	&__button--max884px{                        //убираем кнопки
+		@include max884px{
+			display: none;
+		}
+	}
+
+	&__button:hover {                            //при посещении
+		color: $color-button--gray;
+		background-color: $color-white;
+		border-color: $color-border--light-gray;
+	}
+
+	&__button:focus{                             //при фокусе
+		outline: 0;
+	}
+	&__button--active{                           //активнaя белая кнопка
+		background-color: $color-white;
+	}
+
+	&__icon--color-blue{
+		color: $color-blue;                      // цвет иконки круг
+	}
+
+	&__icon--color-red{
+		color: $color-active;                   // цвет иконки флажек
+	}
+
+}

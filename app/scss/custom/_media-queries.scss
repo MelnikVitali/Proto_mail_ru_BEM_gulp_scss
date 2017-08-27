@@ -1,0 +1,48 @@
+/* media-queries */
+
+ /*убираем панель поиска  и группу кнопок фикс.меню*/
+@media screen and (max-width: 1010px){
+	.center-menu__navbar-form,
+	.fixed-menu__btn-group--display-none-1010{
+		display: none !important;
+	}
+}
+/*убираем ссылки верхнего и три ссылки центрального меню*/
+@media screen and (max-width: 884px){
+	.display-none-884{
+		display: none;
+	}
+}
+@media screen and (max-width: 768px){
+	.display-block-768{
+		display: block !important;
+	}
+	.display-none-768{
+		display: none !important;
+	}
+	.content-left{
+		float: none;
+		width: 100%;
+	}
+	.content-left__fixed-menu{
+		position: relative;      /* убираем фикс.позицию кнопки справа*/
+		top: 0px;
+		float: none;
+	}
+	.content-right{
+		width: 100%;
+		margin-left: 20px;
+	}
+	.content-right__fixed-menu{
+		position: relative;     /* пробел над кнопками */
+		top: 0px;
+		margin-top: 8px;
+	}
+	.center-menu__logo{
+		padding-left: 25px !important;   /* убираем пробел логотипа */
+	}
+	.footer__button-group{
+		margin-top: 0;         /* Уменьшаем,так как добавляется маргин будстрапа */
+	}
+
+}

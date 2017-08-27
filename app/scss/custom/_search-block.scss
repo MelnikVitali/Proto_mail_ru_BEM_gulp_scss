@@ -1,0 +1,38 @@
+      //open block search-block
+
+.search-block {
+
+  &--min768px-max1024px {                //блок поиска пропадает потом в выпадающем меню
+    @include min768px-max1024px{
+      display: none;
+    }
+  }
+
+  &__group {                             //объединяем иконки с меню поиска
+    background-color: $color-white;
+    border-radius: 4px;
+    display: flex;                       //стили в выпадающем меню
+    align-items: center;
+  }
+
+  &__input {                              //  меню поиска убираем линию
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+  }
+
+  &__icon {                               //иконки меню
+    vertical-align: middle;
+    padding: 3px 6px;
+    color: $color-button--gray;
+  }
+
+  &__icon--arrow-size {                   //иконка стрелка
+    font-size: 1.2rem;
+  }
+
+  &__icon--search-size {                  //иконка лупа
+    font-size: 2rem;
+  }
+}
+

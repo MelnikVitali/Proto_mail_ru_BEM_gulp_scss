@@ -1,0 +1,76 @@
+/* open block center-menu */
+
+.center-menu {
+  margin-bottom: 10px;                           //убираем нижнее поле будстрапа
+  background-color: $color-menu--blue;           //цвет меню
+  border: none;
+  border-radius: 0;
+
+  &__button--toggle-color {                      //цвет переключателя выпадающего меню
+    background-color: $color-white;
+  }
+
+  &__button--toggle-color:hover {                //цвет переключателя выпадающего меню
+    background-color: $color-link--gray;
+  }
+
+  &__logo-img {
+    height: 28px;                                // логотип размер картинки
+    margin: -3px 45px;                           //размещаем в блоке
+  }
+
+  &__logo-img--max768px {
+    @include max768px {
+      margin-left: 25px;                         // убираем пробел логотипа
+    }
+  }
+
+  &__list {
+    font-size: 1.4rem;                           // размер текста в меню
+  }
+
+  &__item--min768px-max884px {
+    @include max884px {
+      display: none !important;                  //три иконки в меню с права
+    }
+    @include max768px {
+      display: block !important;
+    }
+  }
+
+  &__icon {
+    font-size: 1.9rem;                           //три иконки в меню с права
+  }
+
+  &__item:hover {                                // цвет ссылок при наведении
+    background-color: $color-link--gray;
+  }
+
+  &__link {                                      // убираем цвет текста и поля будстрапа
+    color: $color-white !important;
+    padding: 15px 10px !important;
+  }
+
+  &__link--active-backgraund {
+    background-color: $color-blue !important;    //цвет активной ссылки*/
+  }
+
+  &__letter {                                    //цвет кружка
+    background-color: $color-orange;
+  }
+
+  &__line--max884px {                            // убираем блок полосы вертикальной в меню
+    @include max884px {
+      display: none !important;
+    }
+  }
+
+  &__vertical-line {                             //полоса вертикальная в меню
+    width: 1px;
+    height: 50px;
+    margin: 0 4px;
+    background-color: #0B73BA;
+  }
+}
+
+

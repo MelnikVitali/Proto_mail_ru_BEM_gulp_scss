@@ -1,0 +1,25 @@
+/* open block bottom-icon */
+
+.bottom-icon{
+
+  &__line{
+    margin: 10px 8px 0 8px;                 //линия под корзиной
+    border-top: 1px solid $color-border--light-gray;
+  }
+
+  &__circle{                                // иконка круг
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: $color-blue;
+    border-radius: 50%;
+  }
+
+  &__bookmark{                             // иконка флажек
+    color: $color-active;
+  }
+
+  &__paperclip{                            // иконка скрепка
+    color: $color-button--gray;
+  }
+}

@@ -1,0 +1,50 @@
+ /* open block content-right__footer */
+
+ .footer{
+	 display: flex;
+
+	 &__button-group{
+		 margin-left: auto;                      //группа кнопок справа
+		 margin-top: 5px;
+		 margin-bottom: 40px;                    //постраничная навигация маргин для  кнопки майл агент
+	 }
+
+	 &__button {
+		 color: $color-button--gray;
+		 background-color: #E0E0E0;              // цвет кнопок
+		 border-color: $color-border--gray;
+	 }
+
+	 &__button:hover {                            //при посещении
+		 color: $color-button--gray;
+		 background-color: $color-white;
+		 border-color: $color-border--light-gray;
+	 }
+
+	 &__button--active{                           //активнaя белая кнопка
+		 background-color: $color-white;
+	 }
+
+	 &__button-fixed{                              // кнопка майл агент
+		 position: fixed;
+		 bottom: 0;                                //позиционирование
+		 right: 20px;
+		 @include max768px{                        //убираем при 768
+			 display: none;
+		 }
+	 }
+
+	 &__button-mail{                              //стили кнопки майл ру
+	 font-weight: bold;
+	 color: black;
+	 background-color: #BEDDF2;
+	 border-color: white;
+	 }
+
+	 &__icon--padding{                            //иконка телефон
+		 padding-right: 20px;
+		 color: green;
+	 }
+ }
+
+

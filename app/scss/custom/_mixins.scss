@@ -1,0 +1,75 @@
+
+@mixin max1024px{
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin min768px-max1024px{
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin max884px{
+  @media screen and (max-width: 884px) {
+    @content;
+  }
+}
+
+@mixin max768px{
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin min768px-max884px{
+  @media (min-width: 768px) and (max-width: 884px) {
+    @content;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+@mixin border-circle {
+  border-radius: 50%;
+  border: 1px solid $gray;
+}
+
+pre { @include border-circle; }
+img { @include border-circle; }
+*/
+
+
+
+
+
+//@mixin border-radius($radius) {
+//  -webkit-border-radius: $radius;
+//  -moz-border-radius: $radius;
+//  -ms-border-radius: $radius;
+//  border-radius: $radius;
+//}
+//.box {@include border_radius(10 px)};
+
+
+
+//aside[role="complementary"] {
+//  float: right;
+//  width: 300px / 960px * 100%;
+//}
+
+
+///* Миксин для обрезки текста с многоточием */
+//@mixin text-ellipsis {
+//  overflow: hidden;
+//  text-overflow: ellipsis;
+//  white-space: nowrap;
+//}

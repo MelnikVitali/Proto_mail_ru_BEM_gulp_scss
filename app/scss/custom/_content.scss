@@ -1,0 +1,7 @@
+ /* open block content */
+
+ .content{
+   display: flex;     //флексы
+   flex-wrap: wrap;   //разрешает переносы на другую строку
+   padding: 0 20px;   //отступ по бокам
+ }

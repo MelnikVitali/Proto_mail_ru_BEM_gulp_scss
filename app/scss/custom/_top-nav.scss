@@ -1,0 +1,44 @@
+/*open block top-nav */
+
+.top-nav {                         //цвет блока верхнего меню
+  display: flex;
+  padding: 0px 15px;
+
+  &__list {                       //левый и правый блок меню
+    display: flex;
+  }
+
+  &__list--right-position {       //блок уходит вправо
+    margin-left: auto;
+  }
+
+  &__item {                       //отступы и размер ссылок
+    padding: 6px 7px;
+    font-size: 1.1rem;
+  }
+  &__dropdown--z-index{
+    z-index: 99;
+  }
+
+  &__item--max884px {            //убираем пункты меню
+    @include max884px {
+      display: none;
+    }
+  }
+
+  &__link:hover {                //цвет ссылок при посещении
+    color: $color-active;
+  }
+
+  &__text--bolder {              //жирность ccылки почта
+    font-weight: bold;
+  }
+
+  &__number {                   //иконка с цыфрой возле почты
+    padding: 0 4px;
+    background: $color-white;
+    color: $color-orange;
+    border-radius: 6px;
+  }
+}
+

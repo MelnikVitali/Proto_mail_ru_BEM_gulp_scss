@@ -1,0 +1,60 @@
+/* open block content-left */
+.content-left{
+	flex-basis: 225px;                               //ширина контента
+	margin-right: 10px;                             //отступ для правого контента
+	z-index: 1;                                      //для видимости фиксированого меню
+	font-size: 1.4rem;
+	@include max768px{
+		flex-basis: 100%;                           //ширина на все окно
+		margin-right: 0;                           //убираем отступ для правого контента
+		margin-bottom: 10px;                        //отступ для правого контента
+	}
+
+	&__nav-list{
+		border: 1px solid lighten($color-border--gray, 10%);     //обрамление блока
+		border-radius: 3px;
+	}
+
+	&__link{                                       // убираем поля будстрапа
+		padding: 4px 10px 4px 20px;
+	}
+
+	&__link--active {
+		font-weight: bold;
+		background-color: $color-table--gray;       // активный входящие
+		padding-left: 0 !important;                //стрелка уходит влево
+
+		&:focus .content-left__icon-caret {        //трансформация стрелки при нажатии
+			transform: rotate(90deg);
+		}
+	}
+
+	&__icon-caret{                                 //срелка вниз активное меню
+		font-size: 1.2rem;
+	}
+
+	&__number--right{                              //цыфра справа активное меню
+		float: right;
+	}
+
+	&__drop-link{
+		padding: 4px 10px 4px 20px !important;      // убираем поля будстрапа  в вылезающем меню
+		padding-left: 37px !important;              //Отступ слева
+	}
+
+	&__text-clean{                                  // текст очистить возле корзины
+		letter-spacing: -1px;
+		color: $color-border--gray;
+		border-bottom: 1px dotted ;
+		float: right;
+	}
+
+	&__bottom-icon--max768px{                        //убираем нижний блок с иконками и линией
+		@include max768px{
+			display: none ;
+		}
+	}
+}
+
+
+
